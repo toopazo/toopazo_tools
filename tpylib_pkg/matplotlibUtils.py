@@ -10,6 +10,15 @@ class FigureUtils:
         pass
 
     @staticmethod
+    def create_fig_axes(a, b):
+        # fig, (ax0, ax1, ax2) = plt.subplots(a, b, figsize=[7, 4])
+        # ax_arr = [ax0, ax1, ax2]
+        fig, ax_arr = plt.subplots(a, b, figsize=[8, 5])
+        if (a == 1) and (b == 1):
+            ax_arr = [ax_arr]
+        return [fig, ax_arr]
+
+    @staticmethod
     def savefig(filename, closefig):
         # plt.show()
         # plt.draw()
@@ -82,6 +91,20 @@ class PlotUtils:
         # PlotUtils.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
+
+    @staticmethod
+    def ax1_x1_y2(ax, x, xlabel, y_arr, ylabel):
+        ax = ax[0]  # for consistency with create_fig_axes
+        # ax.hold(True)
+        ax.grid(True)
+        ax.plot(x, y_arr[0], color='red')
+        ax.plot(x, y_arr[1], color='green')
+        # ax.plot(x, y_arr[2], color='blue')
+        ax.set(xlabel=xlabel, ylabel=ylabel)
+        ax.ticklabel_format(useOffset=False)
+        # UlgPlotFigures.auto_lims(ax, y_arr)
+        ax.locator_params(axis='y', nbins=3)
+        ax.locator_params(axis='x', nbins=4)
 
     @staticmethod
     def ax1_x2_y2(ax_arr, x_arr, xlabel_arr, y_arr, ylabel_arr):

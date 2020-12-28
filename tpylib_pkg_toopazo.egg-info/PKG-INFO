@@ -1,23 +1,40 @@
 Metadata-Version: 2.1
 Name: tpylib-pkg-toopazo
-Version: 0.0.8
-Summary: Python methods for file and folder operations
+Version: 0.0.9
+Summary: Python methods for common file and folder operations
 Home-page: https://github.com/toopazo/tpylib
 Author: toopazo
 Author-email: toopazo@protonmail.com
 License: UNKNOWN
 Description: # toopazo_pylib
-        Python library for different tasks
+        A personal python library for common file-processing tasks
         
+        Important links
+        - https://packaging.python.org/tutorials/packaging-projects/
+        - https://test.pypi.org/manage/account/token/
+        - https://test.pypi.org/project/tpylib-pkg-toopazo/
         
-        https://packaging.python.org/tutorials/packaging-projects/
-        https://test.pypi.org/manage/account/token/
+        Note to myself: Commands to upload a new version of this python package. 
+        This is taken from https://widdowquinn.github.io/coding/update-pypi-package/
         
-        pypi-AgENdGVzdC5weXBpLm9yZwIkZWI2NTlhMTYtNTY1Zi00OWUyLWE4YWUtODA5MmYzMjQzMmQwAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiCbvN4oyBi1ILFoWDZQRPvbgzqTjEGj3p3EuFgo5-zq4w
-        
-        https://test.pypi.org/project/tpylib-pkg-toopazo/0.0.1/
-        
-        python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps tpylib-pkg-toopazo
+        1. Update local packages for distribution
+            ```
+            python3 -m pip install --user --upgrade setuptools wheel
+            python3 -m pip install --user --upgrade twine 
+            ```
+        2. Open setup.py and change the version, e.g., version='1.0.3'
+        3. Create distribution packages on your local machine, and check the dist/ directory for the new version files
+            ```
+            python3 setup.py sdist bdist_wheel
+            ```
+        4. Upload the distribution files to pypi’s test server
+            ```
+            python3 -m twine upload --repository testpypi dist/*
+            ```
+        5. Install the distribution files from pypi’s test server
+            ```
+            python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps tpylib-pkg-toopazo
+            ```
         
         
         

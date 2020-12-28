@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763b4c15-0c7e-47bb-8569-e05a2c689d69" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tpylib_pkg/matplotlibUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tpylib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tpylib.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/tpylib_pkg/fileFolderUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/tpylib_pkg/fileFolderUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/tpylib_pkg/plotToFig.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/tpylib_pkg/tpylib_ExternalProcess.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/tpylib_pkg/tpylib_FileFolderUtils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/tpylib_pkg/tpylib_PlotToFig.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/tpylib_pkg/tpylib_ReplaceDotsFromPath.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/tpylib_pkg/tpylib_statistics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpylib_pkg/fileFolderUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tpylib_pkg/fileFolderUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpylib_pkg/plotToFig.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tpylib_pkg/matplotlibUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tpylib_pkg/matplotlibUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tpylib_pkg_toopazo.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/tpylib_pkg_toopazo.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpylib_pkg_toopazo.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tpylib_pkg_toopazo.egg-info/SOURCES.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,7 +27,7 @@
       <file leaf-file-name="fileFolderUtils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpylib_pkg/fileFolderUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2948">
+            <state relative-caret-position="826">
               <caret line="134" selection-start-line="134" selection-end-line="134" />
             </state>
           </provider>
@@ -50,8 +36,8 @@
       <file leaf-file-name="matplotlibUtils.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tpylib_pkg/matplotlibUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="591">
+              <caret line="106" column="44" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
               <folding>
                 <element signature="e#23#77#0" expanded="true" />
               </folding>
@@ -93,6 +79,7 @@
       <find>.plot</find>
       <find>ax1_x1_y</find>
       <find>scatter</find>
+      <find>fig</find>
     </findStrings>
     <replaceStrings>
       <replace>fpath</replace>
@@ -123,17 +110,16 @@
         <option value="$PROJECT_DIR$/tpylib_pkg/csvParser.py" />
         <option value="$PROJECT_DIR$/tpylib_pkg/plotToFig.py" />
         <option value="$PROJECT_DIR$/tpylib_pkg/plotUtils.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/tpylib_pkg/matplotlibUtils.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="56" />
-    <option name="y" value="-11" />
-    <option name="width" value="1305" />
-    <option name="height" value="780" />
+    <option name="y" value="-4" />
+    <option name="width" value="1680" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -180,7 +166,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../static_zeroSet/experimental_sol/AnechoicChamberTests/toopazo_anecha" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -214,19 +200,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1682" height="1062" extended-state="6" />
+    <frame x="0" y="-4" width="1680" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19285715" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -240,6 +227,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpylib_pkg/fileFolderUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2948">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpylib_pkg/matplotlibUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#23#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -364,10 +375,10 @@
     <entry file="file://$PROJECT_DIR$/tpylib_ReplaceDotsFromPath.py" />
     <entry file="file://$PROJECT_DIR$/tpylib_FileFolderUtils.py" />
     <entry file="file://$PROJECT_DIR$/tpylib_pkg/csvParser.py" />
-    <entry file="file://$PROJECT_DIR$/tpylib_pkg/fileFolderUtils.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2948">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="352">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -378,17 +389,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/tpylib_pkg/fileFolderUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="826">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpylib_pkg/matplotlibUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="591">
+          <caret line="106" column="44" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
           <folding>
             <element signature="e#23#77#0" expanded="true" />
           </folding>
