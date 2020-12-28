@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tpylib-pkg-toopazo", # Replace with your own username
-    version="0.0.2",
+    version="0.0.9",
     author="toopazo",
     author_email="toopazo@protonmail.com",
-    description="Python methods for file and folder operations",
+    description="Python methods for common file and folder operations",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/toopazo/tpylib",

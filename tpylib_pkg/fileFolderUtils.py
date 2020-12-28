@@ -32,7 +32,7 @@ class FileFolderUtils:
 
     @staticmethod
     def get_folder_arr(folderpath, pattern):
-        # mfolder = FileFolderUtils.full_path(mfolder)
+        # targetfolder = FileFolderUtils.full_path(targetfolder)
         folder_arr = []
         for item in os.listdir(folderpath):
             if os.path.isdir(os.path.join(folderpath, item)):
@@ -134,33 +134,35 @@ class FileFolderUtils:
 if __name__ == '__main__':
     # print('Given a path')
 
-    mfolder = FileFolderUtils.get_currfolder()
-    print('FileFolderUtils.get_currfolder() => %s' % mfolder)
+    targetfolder = FileFolderUtils.get_currfolder()
+    print('FileFolderUtils.get_currfolder() => %s' % targetfolder)
 
-    res = FileFolderUtils.is_file(mfolder)
+    targetfolder = os.path.normpath(targetfolder + '/..')
+
+    res = FileFolderUtils.is_file(targetfolder)
     print('FileFolderUtils.is_file() => %s' % res)
 
-    res = FileFolderUtils.is_folder(mfolder)
+    res = FileFolderUtils.is_folder(targetfolder)
     print('FileFolderUtils.is_folder() => %s' % res)
 
-    mfolder = FileFolderUtils.full_path(mfolder)
-    print('FileFolderUtils.full_path() => %s' % mfolder)
+    targetfolder = FileFolderUtils.full_path(targetfolder)
+    print('FileFolderUtils.full_path() => %s' % targetfolder)
 
     mpattern = ''
-    res_arr = FileFolderUtils.get_folder_arr(mfolder, mpattern)
+    res_arr = FileFolderUtils.get_folder_arr(targetfolder, mpattern)
     print('FileFolderUtils.get_folder_arr() => %s' % res_arr)
 
     mextension = ''
-    res_arr = FileFolderUtils.get_file_arr(mfolder, mextension)
+    res_arr = FileFolderUtils.get_file_arr(targetfolder, mextension)
     print('FileFolderUtils.get_file_arr() => %s' % res_arr)
 
-    bname = FileFolderUtils.get_basename(mfolder)
-    print('FileFolderUtils.mfolder() => %s' % bname)
+    bname = FileFolderUtils.get_basename(targetfolder)
+    print('FileFolderUtils.get_basename() => %s' % bname)
 
     # Write file to
-    testfolder = FileFolderUtils.full_path(mfolder + '/tests')
+    testfolder = FileFolderUtils.full_path(targetfolder + '/tests')
     for i in range(0, 3):
-        mfilepath = mfolder + '/tests/test_' + str(i) + '.txt'
+        mfilepath = targetfolder + '/tests/test_' + str(i) + '.txt'
         mfilepath = FileFolderUtils.full_path(mfilepath)
         fd = open(mfilepath, 'w')
         fd.write(str(i))
