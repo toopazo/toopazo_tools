@@ -61,6 +61,25 @@ class PlotUtils:
         ax_arr[0].locator_params(axis='x', nbins=4)
 
     @staticmethod
+    def ax1_x2_y2_twinx(ax_arr, x_arr, xlabel_arr, y_arr, ylabel_arr):
+        ax1 = ax_arr[0]
+
+        color = 'red'
+        ax1.set_xlabel(xlabel_arr[0])
+        ax1.set_ylabel(ylabel_arr[0], color=color)
+        ax1.plot(x_arr[0], y_arr[0], color=color)
+        ax1.tick_params(axis='y', labelcolor=color)
+
+        # instantiate a second axes that shares the same x-axis
+        ax2 = ax1.twinx()
+
+        # we already handled the x-label with ax1
+        color = 'green'
+        ax2.set_ylabel(ylabel_arr[1], color=color)
+        ax2.plot(x_arr[1], y_arr[1], color=color)
+        ax2.tick_params(axis='y', labelcolor=color)
+
+    @staticmethod
     def ax1_x1_y8(ax_arr, x_arr, xlabel_arr, y_arr, ylabel_arr):
         # ax.hold(True)
         ax_arr[0].grid(True)
@@ -117,23 +136,6 @@ class PlotUtils:
         # PlotUtils.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
-
-    @staticmethod
-    def ax1_x2_y2_twinx(ax_arr, x_arr, xlabel_arr, y_arr, ylabel_arr):
-        color = 'red'
-        ax_arr[0].set_xlabel(xlabel_arr[0])
-        ax_arr[0].set_ylabel(ylabel_arr[0], color=color)
-        ax_arr[0].plot(x_arr[0], y_arr[0], color=color)
-        ax_arr[0].tick_params(axis='y', labelcolor=color)
-
-        # instantiate a second axes that shares the same x-axis
-        ax2 = ax_arr[0].twinx()
-
-        # we already handled the x-label with ax1
-        color = 'green'
-        ax2.set_ylabel(ylabel_arr[1], color=color)
-        ax2.plot(x_arr[1], y_arr[1], color=color)
-        ax2.tick_params(axis='y', labelcolor=color)
 
     @staticmethod
     def ax1_x3_y3(ax_arr, x_arr, xlabel_arr, y_arr, ylabel_arr):

@@ -14,9 +14,10 @@ This is taken from https://widdowquinn.github.io/coding/update-pypi-package/
     python3 -m pip install --user --upgrade setuptools wheel
     python3 -m pip install --user --upgrade twine 
     ```
-2. Open setup.py and change the version, e.g., version='1.0.3'. It is also recomended to delete the build/ folder
+2. Open setup.py and change the version, e.g., version='1.0.3'. It is sometimes neccessary to delete the build/ anddist/ folder
     ```
     rm -r build/*
+    rm -r dist/*
     ```
 3. Create distribution packages on your local machine, and check the dist/ directory for the new version files
     ```
@@ -28,7 +29,7 @@ This is taken from https://widdowquinn.github.io/coding/update-pypi-package/
     ```
 5. Install the distribution files from pypi’s test server
     ```
-    python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps tpylib-pkg-toopazo
+    python3 -m pip install -U --index-url https://test.pypi.org/simple/ --no-deps tpylib-pkg-toopazo
     ```
 
 
