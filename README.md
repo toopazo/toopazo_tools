@@ -1,11 +1,11 @@
-# toopazo_pylib
+# toopazo_tools
 A personal python library for common file-processing tasks
 
 Important links
 - https://packaging.python.org/tutorials/packaging-projects/
 - https://pypi.org/
 
-Note to myself: Commands to upload a new version of this python package. 
+## How to upload a new version
 This is taken from https://widdowquinn.github.io/coding/update-pypi-package/
 
 1. Update local packages for distribution
@@ -30,7 +30,7 @@ the dist/ directory for the new version files
     ```
 5. Install the package from https://pypi.org/ server
     ```
-    python3 -m pip install -U toopazo_tools
+    python3 -m pip install -U toopazo-tools
     ```
 
 
