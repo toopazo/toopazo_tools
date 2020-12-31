@@ -19,7 +19,7 @@ import subprocess
 
 # import threading
 import multiprocessing
-# import queue
+import queue
 import time
 import os
 
@@ -56,7 +56,8 @@ class ExternalProcess:
         pqueue = multiprocessing.Queue()
         pnum = 1
         for i in range(pnum):
-            # pname = 'multiprocessing_worker_%s' % i
+            _ = i
+            # pname = 'multiprocessing_worker_%s' % ui
             pname = pfnct.__name__
             proc = multiprocessing.Process(name=pname,
                                            target=pfnct,
@@ -74,6 +75,7 @@ class ExternalProcess:
 
         reply = None
         for proc in p_arr:
+            _ = proc
             # arg = "[exec_with_multiprocessing] %s isAlive() %s" % \
             #       (proc.name, proc.is_alive())
             # print(arg)
@@ -125,7 +127,7 @@ class ExternalProcess:
 
 if __name__ == '__main__':
     mtimeout = 1
-    for i in range(0, 5):
-        marg = (i,)
+    for ui in range(0, 5):
+        marg = (ui,)
         ExternalProcess.exec_with_multiprocessing(
             ExternalProcess.multiprocessing_worker, marg, mtimeout)

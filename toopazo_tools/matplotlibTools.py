@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 
-from tpylib_pkg.fileFolderUtils import FileFolderUtils
+from toopazo_tools.fileFolderTools import FileFolderTools
+
 import matplotlib.pyplot as plt
 # import numpy as np
 
 
-class FigureUtils:
+class FigureTools:
     def __init__(self):
         pass
 
@@ -29,7 +30,7 @@ class FigureUtils:
 
         # Save and close current figure
         print('[savecf] filename %s' %
-              FileFolderUtils.get_basename(filename))
+              FileFolderTools.get_basename(filename))
         plt.savefig(filename, bbox_inches='tight')
 
         if closefig:
@@ -37,7 +38,7 @@ class FigureUtils:
             plt.close()
 
 
-class PlotUtils:
+class PlotTools:
     def __init__(self):
         pass
 
@@ -56,6 +57,7 @@ class PlotUtils:
         #     yupper = 0.8 * ymax
         #
         # ax.set_ylim([ylower, yupper])
+        _ = y_arr
 
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
@@ -77,7 +79,7 @@ class PlotUtils:
         #   I was getting the error
         #   "This method only works with the ScalarFormatter.")
         #   AttributeError: This method only works with the ScalarFormatter.
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -88,7 +90,7 @@ class PlotUtils:
         ax_arr[0].plot(x_arr[0], y_arr[0], color='red')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -114,7 +116,7 @@ class PlotUtils:
         ax_arr[0].plot(x_arr[1], y_arr[1], color='green')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -144,7 +146,7 @@ class PlotUtils:
         ax_arr[0].plot(x_arr[2], y_arr[2], color='blue')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -158,7 +160,7 @@ class PlotUtils:
         ax_arr[0].plot(x_arr[3], y_arr[3], color='black')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -172,7 +174,7 @@ class PlotUtils:
         ax_arr[0].plot(x_arr[0], y_arr[3], color='black')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -185,7 +187,7 @@ class PlotUtils:
         ax_arr[0].plot(x_arr[0], y_arr[2], color='blue')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -195,7 +197,7 @@ class PlotUtils:
         ax_arr[0].grid(True)
         ax_arr[0].plot(x_arr[0], y_arr[0])
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
-        # PlotUtils.auto_lims(ax_arr[0], y_arr[0])
+        # PlotTools.auto_lims(ax_arr[0], y_arr[0])
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -203,7 +205,7 @@ class PlotUtils:
         ax_arr[1].grid(True)
         ax_arr[1].plot(x_arr[1], y_arr[1])
         ax_arr[1].set(xlabel=xlabel_arr[1], ylabel=ylabel_arr[1])
-        # PlotUtils.auto_lims(ax_arr[1], y_arr[1])
+        # PlotTools.auto_lims(ax_arr[1], y_arr[1])
         ax_arr[1].locator_params(axis='y', nbins=3)
         ax_arr[1].locator_params(axis='x', nbins=4)
 
@@ -213,7 +215,7 @@ class PlotUtils:
         ax_arr[0].grid(True)
         ax_arr[0].plot(x_arr[0], y_arr[0])
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
-        # PlotUtils.auto_lims(ax_arr[0], y_arr[0])
+        # PlotTools.auto_lims(ax_arr[0], y_arr[0])
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -221,7 +223,7 @@ class PlotUtils:
         ax_arr[1].grid(True)
         ax_arr[1].plot(x_arr[0], y_arr[1])
         ax_arr[1].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[1])
-        # PlotUtils.auto_lims(ax_arr[1], y_arr[1])
+        # PlotTools.auto_lims(ax_arr[1], y_arr[1])
         ax_arr[1].locator_params(axis='y', nbins=3)
         ax_arr[1].locator_params(axis='x', nbins=4)
 
@@ -229,7 +231,7 @@ class PlotUtils:
         ax_arr[2].grid(True)
         ax_arr[2].plot(x_arr[0], y_arr[2])
         ax_arr[2].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[2])
-        # PlotUtils.auto_lims(ax_arr[2], y_arr[2])
+        # PlotTools.auto_lims(ax_arr[2], y_arr[2])
         ax_arr[2].locator_params(axis='y', nbins=3)
         ax_arr[2].locator_params(axis='x', nbins=4)
 
@@ -240,7 +242,7 @@ class PlotUtils:
         ax_arr[0].plot(x_arr[0], y_arr[0], color='red')
         ax_arr[0].plot(x_arr[0], y_arr[3], color='green')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
-        # PlotUtils.auto_lims(ax_arr[0], y_arr[0])
+        # PlotTools.auto_lims(ax_arr[0], y_arr[0])
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -249,7 +251,7 @@ class PlotUtils:
         ax_arr[1].plot(x_arr[0], y_arr[1], color='red')
         ax_arr[1].plot(x_arr[0], y_arr[4], color='green')
         ax_arr[1].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[1])
-        # PlotUtils.auto_lims(ax_arr[1], y_arr[1])
+        # PlotTools.auto_lims(ax_arr[1], y_arr[1])
         ax_arr[1].locator_params(axis='y', nbins=3)
         ax_arr[1].locator_params(axis='x', nbins=4)
 
@@ -258,7 +260,7 @@ class PlotUtils:
         ax_arr[2].plot(x_arr[0], y_arr[2], color='red')
         ax_arr[2].plot(x_arr[0], y_arr[5], color='green')
         ax_arr[2].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[2])
-        # PlotUtils.auto_lims(ax_arr[2], y_arr[2])
+        # PlotTools.auto_lims(ax_arr[2], y_arr[2])
         ax_arr[2].locator_params(axis='y', nbins=3)
         ax_arr[2].locator_params(axis='x', nbins=4)
 
@@ -268,7 +270,7 @@ class PlotUtils:
         ax_arr[0].grid(True)
         ax_arr[0].plot(x_arr[0], y_arr[0])
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
-        # PlotUtils.auto_lims(ax_arr[0], y_arr[0])
+        # PlotTools.auto_lims(ax_arr[0], y_arr[0])
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -276,7 +278,7 @@ class PlotUtils:
         ax_arr[1].grid(True)
         ax_arr[1].plot(x_arr[0], y_arr[1])
         ax_arr[1].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[1])
-        # PlotUtils.auto_lims(ax_arr[1], y_arr[1])
+        # PlotTools.auto_lims(ax_arr[1], y_arr[1])
         ax_arr[1].locator_params(axis='y', nbins=3)
         ax_arr[1].locator_params(axis='x', nbins=4)
 
@@ -284,7 +286,7 @@ class PlotUtils:
         ax_arr[2].grid(True)
         ax_arr[2].plot(x_arr[0], y_arr[2])
         ax_arr[2].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[2])
-        # PlotUtils.auto_lims(ax_arr[2], y_arr[2])
+        # PlotTools.auto_lims(ax_arr[2], y_arr[2])
         ax_arr[2].locator_params(axis='y', nbins=3)
         ax_arr[2].locator_params(axis='x', nbins=4)
 
@@ -292,12 +294,12 @@ class PlotUtils:
         ax_arr[3].grid(True)
         ax_arr[3].plot(x_arr[0], y_arr[3])
         ax_arr[3].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[3])
-        # PlotUtils.auto_lims(ax_arr[3], y_arr[3])
+        # PlotTools.auto_lims(ax_arr[3], y_arr[3])
         ax_arr[3].locator_params(axis='y', nbins=3)
         ax_arr[3].locator_params(axis='x', nbins=4)
 
 
-class ScatterUtils:
+class ScatterTools:
     def __init__(self):
         pass
 
@@ -316,6 +318,7 @@ class ScatterUtils:
         #     yupper = 0.8 * ymax
         #
         # ax.set_ylim([ylower, yupper])
+        _ = y_arr
 
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
@@ -337,7 +340,7 @@ class ScatterUtils:
         #   I was getting the error
         #   "This method only works with the ScalarFormatter.")
         #   AttributeError: This method only works with the ScalarFormatter.
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -348,7 +351,7 @@ class ScatterUtils:
         ax_arr[0].scatter(x_arr[0], y_arr[0], color='red')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -360,7 +363,7 @@ class ScatterUtils:
         ax_arr[0].scatter(x_arr[1], y_arr[1], color='green')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -373,7 +376,7 @@ class ScatterUtils:
         ax_arr[0].scatter(x_arr[2], y_arr[2], color='blue')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -387,7 +390,7 @@ class ScatterUtils:
         ax_arr[0].scatter(x_arr[3], y_arr[3], color='black')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -401,7 +404,7 @@ class ScatterUtils:
         ax_arr[0].scatter(x_arr[0], y_arr[3], color='black')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -414,7 +417,7 @@ class ScatterUtils:
         ax_arr[0].scatter(x_arr[0], y_arr[2], color='blue')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
         ax_arr[0].ticklabel_format(useOffset=False)
-        # PlotUtils.auto_lims(ax_arr, y_arr)
+        # PlotTools.auto_lims(ax_arr, y_arr)
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -424,7 +427,7 @@ class ScatterUtils:
         ax_arr[0].grid(True)
         ax_arr[0].scatter(x_arr[0], y_arr[0])
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
-        # PlotUtils.auto_lims(ax_arr[0], y_arr[0])
+        # PlotTools.auto_lims(ax_arr[0], y_arr[0])
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -432,7 +435,7 @@ class ScatterUtils:
         ax_arr[1].grid(True)
         ax_arr[1].scatter(x_arr[1], y_arr[1])
         ax_arr[1].set(xlabel=xlabel_arr[1], ylabel=ylabel_arr[1])
-        # PlotUtils.auto_lims(ax_arr[1], y_arr[1])
+        # PlotTools.auto_lims(ax_arr[1], y_arr[1])
         ax_arr[1].locator_params(axis='y', nbins=3)
         ax_arr[1].locator_params(axis='x', nbins=4)
 
@@ -442,7 +445,7 @@ class ScatterUtils:
         ax_arr[0].grid(True)
         ax_arr[0].scatter(x_arr[0], y_arr[0])
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
-        # PlotUtils.auto_lims(ax_arr[0], y_arr[0])
+        # PlotTools.auto_lims(ax_arr[0], y_arr[0])
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -450,7 +453,7 @@ class ScatterUtils:
         ax_arr[1].grid(True)
         ax_arr[1].scatter(x_arr[0], y_arr[1])
         ax_arr[1].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[1])
-        # PlotUtils.auto_lims(ax_arr[1], y_arr[1])
+        # PlotTools.auto_lims(ax_arr[1], y_arr[1])
         ax_arr[1].locator_params(axis='y', nbins=3)
         ax_arr[1].locator_params(axis='x', nbins=4)
 
@@ -458,7 +461,7 @@ class ScatterUtils:
         ax_arr[2].grid(True)
         ax_arr[2].scatter(x_arr[0], y_arr[2])
         ax_arr[2].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[2])
-        # PlotUtils.auto_lims(ax_arr[2], y_arr[2])
+        # PlotTools.auto_lims(ax_arr[2], y_arr[2])
         ax_arr[2].locator_params(axis='y', nbins=3)
         ax_arr[2].locator_params(axis='x', nbins=4)
 
@@ -469,7 +472,7 @@ class ScatterUtils:
         ax_arr[0].scatter(x_arr[0], y_arr[0], color='red')
         ax_arr[0].scatter(x_arr[0], y_arr[3], color='green')
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
-        # PlotUtils.auto_lims(ax_arr[0], y_arr[0])
+        # PlotTools.auto_lims(ax_arr[0], y_arr[0])
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -478,7 +481,7 @@ class ScatterUtils:
         ax_arr[1].scatter(x_arr[0], y_arr[1], color='red')
         ax_arr[1].scatter(x_arr[0], y_arr[4], color='green')
         ax_arr[1].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[1])
-        # PlotUtils.auto_lims(ax_arr[1], y_arr[1])
+        # PlotTools.auto_lims(ax_arr[1], y_arr[1])
         ax_arr[1].locator_params(axis='y', nbins=3)
         ax_arr[1].locator_params(axis='x', nbins=4)
 
@@ -487,7 +490,7 @@ class ScatterUtils:
         ax_arr[2].scatter(x_arr[0], y_arr[2], color='red')
         ax_arr[2].scatter(x_arr[0], y_arr[5], color='green')
         ax_arr[2].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[2])
-        # PlotUtils.auto_lims(ax_arr[2], y_arr[2])
+        # PlotTools.auto_lims(ax_arr[2], y_arr[2])
         ax_arr[2].locator_params(axis='y', nbins=3)
         ax_arr[2].locator_params(axis='x', nbins=4)
 
@@ -497,7 +500,7 @@ class ScatterUtils:
         ax_arr[0].grid(True)
         ax_arr[0].scatter(x_arr[0], y_arr[0])
         ax_arr[0].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[0])
-        # PlotUtils.auto_lims(ax_arr[0], y_arr[0])
+        # PlotTools.auto_lims(ax_arr[0], y_arr[0])
         ax_arr[0].locator_params(axis='y', nbins=3)
         ax_arr[0].locator_params(axis='x', nbins=4)
 
@@ -505,7 +508,7 @@ class ScatterUtils:
         ax_arr[1].grid(True)
         ax_arr[1].scatter(x_arr[0], y_arr[1])
         ax_arr[1].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[1])
-        # PlotUtils.auto_lims(ax_arr[1], y_arr[1])
+        # PlotTools.auto_lims(ax_arr[1], y_arr[1])
         ax_arr[1].locator_params(axis='y', nbins=3)
         ax_arr[1].locator_params(axis='x', nbins=4)
 
@@ -513,7 +516,7 @@ class ScatterUtils:
         ax_arr[2].grid(True)
         ax_arr[2].scatter(x_arr[0], y_arr[2])
         ax_arr[2].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[2])
-        # PlotUtils.auto_lims(ax_arr[2], y_arr[2])
+        # PlotTools.auto_lims(ax_arr[2], y_arr[2])
         ax_arr[2].locator_params(axis='y', nbins=3)
         ax_arr[2].locator_params(axis='x', nbins=4)
 
@@ -521,6 +524,6 @@ class ScatterUtils:
         ax_arr[3].grid(True)
         ax_arr[3].scatter(x_arr[0], y_arr[3])
         ax_arr[3].set(xlabel=xlabel_arr[0], ylabel=ylabel_arr[3])
-        # PlotUtils.auto_lims(ax_arr[3], y_arr[3])
+        # PlotTools.auto_lims(ax_arr[3], y_arr[3])
         ax_arr[3].locator_params(axis='y', nbins=3)
         ax_arr[3].locator_params(axis='x', nbins=4)

@@ -17,12 +17,12 @@ class TimeseriesStats:
 
     @staticmethod
     def get_window(arr, i, nwindow):
-        size = np.shape(arr)
-        nmax = len(arr) - 1
+        # size = np.shape(arr)
+        # nmax = len(arr) - 1
         ifirst = i
         ilast = i + nwindow
         # if ilast > nmax:
-            # ilast = nmax
+        #     ilast = nmax
         #     sarr = arr[ifirst:ilast]
         # else:
         sarr = arr[ifirst:ilast]
@@ -46,7 +46,7 @@ class TimeseriesStats:
             sarr = TimeseriesStats.get_window(arr, i, nwindow)
             res = fun(sarr)
             res_arr.append(res)
-            # arg = '[apply_to_window] i %s, sarr %s, res %s' % (i, sarr, res)
+            # arg = '[apply_to_window] ui %s, sarr %s, res %s' % (ui, sarr, res)
             # print(arg)
         return np.array(res_arr)
 
@@ -67,5 +67,3 @@ class TimeseriesStats:
 
 if __name__ == '__main__':
     TimeseriesStats.test_iterate_window()
-
-
