@@ -1,17 +1,18 @@
 Metadata-Version: 2.1
 Name: toopazo-tools
-Version: 0.0.1
+Version: 0.0.18
 Summary: Python methods for common file and folder operations
 Home-page: https://github.com/toopazo/toopazo_tools
 Author: toopazo
 Author-email: toopazo@protonmail.com
 License: UNKNOWN
 Description: # toopazo_tools
-        A personal python library for common file-processing tasks
+        A personal python package for common file-processing tasks
         
         Important links
         - https://packaging.python.org/tutorials/packaging-projects/
         - https://pypi.org/
+        - https://pypi.org/project/toopazo-tools/
         
         ## How to upload a new version
         This is taken from https://widdowquinn.github.io/coding/update-pypi-package/
@@ -22,23 +23,24 @@ Description: # toopazo_tools
             python3 -m pip install --user --upgrade twine 
             ```
         2. Open setup.py and change the version, e.g., version='1.0.3'.
-        It is sometimes neccessary to delete the build/ anddist/ folder
+        
+        3. It is sometimes neccessary to delete the build/ and dist/ folder
             ```
             rm -r build/*
             rm -r dist/*
             ```
-        3. Create distribution packages on your local machine, and check
+        4. Create distribution packages on your local machine, and check
         the dist/ directory for the new version files
             ```
             python3 setup.py sdist bdist_wheel
             ```
-        4. Upload the distribution files to https://pypi.org/ server
+        5. Upload the distribution files to https://pypi.org/ server
             ```
             python3 -m twine upload dist/*
             ```
-        5. Install the package from https://pypi.org/ server
+        6. Install the package from https://pypi.org/ server
             ```
-            python3 -m pip install -U toopazo_tools
+            python3 -m pip install -U toopazo-tools
             ```
         
         

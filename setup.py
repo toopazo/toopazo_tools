@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="toopazo_tools", # Replace with your own username
-    version="0.0.1",
+    version="0.0.18",
     author="toopazo",
     author_email="toopazo@protonmail.com",
     description="Python methods for common file and folder operations",

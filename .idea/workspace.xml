@@ -2,91 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763b4c15-0c7e-47bb-8569-e05a2c689d69" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/toopazo_tools/file_folder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toopazo_tools/install_packages.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/toopazo_tools/externalProcess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/toopazo_tools/fileFolderTools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/toopazo_tools/matplotlibTools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/toopazo_tools/replaceDotsFromPath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/toopazo_tools/statistics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/toopazo_tools-0.0.1-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/toopazo_tools-0.0.1.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/toopazo_tools.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toopazo_tools.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toopazo_tools/externalProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools/external_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toopazo_tools/fileFolderTools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/toopazo_tools/matplotlibTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools/matplotlib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toopazo_tools/replaceDotsFromPath.py" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools/replace_dots_from_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toopazo_tools/statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools/time_series.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="652">
-                <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="externalProcess.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/toopazo_tools/externalProcess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fileFolderTools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toopazo_tools/fileFolderTools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matplotlibTools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlibTools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#23#80#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="replaceDotsFromPath.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toopazo_tools/replaceDotsFromPath.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#23#80#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="statistics.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toopazo_tools/statistics.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -97,35 +39,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rename</find>
-      <find>dirna</find>
-      <find>foldername</find>
-      <find>mfi</find>
-      <find>full_</find>
-      <find>csvParser</find>
-      <find>CsvParser</find>
-      <find>targetfolder</find>
-      <find>[]</find>
-      <find>= np.array(df['Time (s)'])</find>
-      <find>array(df</find>
-      <find>ax3_x1_y3</find>
-      <find>ax1_x1_y1</find>
-      <find>ax3</find>
-      <find>x,</find>
-      <find>auto_lims(ax_arr,</find>
-      <find>auto_lims</find>
-      <find>ax1_x</find>
-      <find>ax1_x1_y3</find>
-      <find>ax1_x1_y4</find>
-      <find>.plot</find>
-      <find>scatter</find>
-      <find>fig</find>
-      <find>ax1_x1_y</find>
-      <find>FileFolderUtils</find>
-      <find>process_file</find>
-      <find>ax1_x2_y2</find>
-      <find>tpy</find>
-      <find>python3 setup.py sdist bdist_wheel</find>
+      <find>rename_file_in_folder</find>
+      <find>testfolder</find>
+      <find>fpath %s</find>
+      <find>basena</find>
+      <find>method</find>
+      <find>method(</find>
+      <find>y_arr[0])</find>
+      <find>cross</find>
+      <find>t2_dt_std</find>
+      <find>t1_dt_std</find>
+      <find>t1_dt_maxusgndev</find>
+      <find>FileFolderTools</find>
+      <find>usgndev</find>
+      <find>t2_rdict</find>
+      <find>t2_arr</find>
+      <find>x2_arr</find>
+      <find>x1_nsamples</find>
+      <find>t1_nsamples</find>
+      <find>t2_nsamples</find>
+      <find>*ka</find>
+      <find>args</find>
+      <find>dict.</find>
+      <find>verbose</find>
+      <find>ax2_x</find>
+      <find>np.me</find>
+      <find>np.avg</find>
+      <find>title</find>
+      <find>avg</find>
+      <find>x_sgndev</find>
+      <find>fit</find>
     </findStrings>
     <replaceStrings>
       <replace>fpath</replace>
@@ -159,23 +102,28 @@
         <option value="$PROJECT_DIR$/tpylib_pkg/plotUtils.py" />
         <option value="$PROJECT_DIR$/tpylib_pkg/matplotlibUtils.py" />
         <option value="$PROJECT_DIR$/toopazo_tools/matplotlibUtils.py" />
-        <option value="$PROJECT_DIR$/toopazo_tools/statistics.py" />
-        <option value="$PROJECT_DIR$/toopazo_tools/fileFolderTools.py" />
         <option value="$PROJECT_DIR$/toopazo_tools/externalProcess.py" />
-        <option value="$PROJECT_DIR$/toopazo_tools/matplotlibTools.py" />
         <option value="$PROJECT_DIR$/toopazo_tools/replaceDotsFromPath.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/toopazo_tools/install_packages.py" />
+        <option value="$PROJECT_DIR$/toopazo_tools/fileFolderTools.py" />
+        <option value="$PROJECT_DIR$/toopazo_tools/install_packages.sh" />
+        <option value="$PROJECT_DIR$/toopazo_tools/matplotlibTools.py" />
+        <option value="$PROJECT_DIR$/toopazo_tools/statistics.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/toopazo_tools/matplotlib.py" />
+        <option value="$PROJECT_DIR$/toopazo_tools/time_series.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="126" />
-    <option name="y" value="-4" />
-    <option name="width" value="1360" />
-    <option name="height" value="772" />
+    <option name="x" value="-1" />
+    <option name="y" value="-11" />
+    <option name="width" value="1682" />
+    <option name="height" value="1062" />
   </component>
+  <component name="ProjectId" id="1vdA2G9d76ILH7ZawgBYT8ATro1" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -207,6 +155,11 @@
             <path>
               <item name="toopazo_tools" type="b2602c69:ProjectViewProjectNode" />
               <item name="toopazo_tools" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toopazo_tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toopazo_tools" type="462c0819:PsiDirectoryNode" />
               <item name="toopazo_tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -214,6 +167,10 @@
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -224,18 +181,7 @@
       <recent name="$PROJECT_DIR$/tpylib_pkg" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -253,17 +199,17 @@
     <frame x="-1" y="-11" width="1682" height="1062" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19761905" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19702381" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -273,56 +219,18 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286638" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/statistics.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlib.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/externalProcess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2772">
-          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/fileFolderTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3916">
-          <caret line="178" column="47" selection-start-line="178" selection-start-column="47" selection-end-line="178" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlibTools.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/replaceDotsFromPath.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/replace_dots_from_path.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#23#80#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/statistics.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/time_series.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -339,14 +247,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/fileFolderTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/file_folder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2948">
           <caret line="134" selection-start-line="134" selection-end-line="134" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlibTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
@@ -360,14 +268,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/fileFolderTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/file_folder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2948">
           <caret line="134" selection-start-line="134" selection-end-line="134" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlibTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7040">
           <caret line="320" column="30" selection-start-line="320" selection-start-column="30" selection-end-line="320" selection-end-column="30" />
@@ -381,14 +289,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/fileFolderTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/file_folder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2948">
           <caret line="134" selection-start-line="134" selection-end-line="134" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlibTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7018">
           <caret line="319" column="60" selection-start-line="319" selection-start-column="60" selection-end-line="319" selection-end-column="60" />
@@ -402,14 +310,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/fileFolderTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/file_folder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2948">
           <caret line="134" selection-start-line="134" selection-end-line="134" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlibTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7018">
           <caret line="319" column="60" selection-start-line="319" selection-start-column="60" selection-end-line="319" selection-end-column="60" />
@@ -423,14 +331,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/fileFolderTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/file_folder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2926">
           <caret line="133" column="26" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlibTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
           <caret line="90" column="17" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="17" />
@@ -451,13 +359,6 @@
     <entry file="file://$PROJECT_DIR$/tpylib_ulgParser.py" />
     <entry file="file://$PROJECT_DIR$/tpylib_ExternalProcess.py" />
     <entry file="file://$PROJECT_DIR$/tpylib_ReplaceDotsFromPath.py" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/2007811470/posix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="856" column="4" selection-start-line="856" selection-start-column="4" selection-end-line="856" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpylib_ExternalProcess.py" />
     <entry file="file://$PROJECT_DIR$/tpylib_ulgParser.py" />
     <entry file="file://$PROJECT_DIR$/tpylib_ulgPlotter.py" />
@@ -469,66 +370,93 @@
     <entry file="file://$PROJECT_DIR$/tpylib_pkg_toopazo.egg-info/PKG-INFO" />
     <entry file="file://$PROJECT_DIR$/tpylib_pkg_toopazo.egg-info/SOURCES.txt" />
     <entry file="file://$PROJECT_DIR$/tpylib_pkg_toopazo.egg-info/top_level.txt" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="652">
-            <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/install_packages.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/2007811470/posix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="856" column="4" selection-start-line="856" selection-start-column="4" selection-end-line="856" selection-end-column="4" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_0.txt" />
+    <entry file="file://$PROJECT_DIR$/build/lib/toopazo_tools/matplotlibTools.py" />
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/replace_dots_from_path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="264">
+            <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/fileFolderTools.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/install_packages.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="3031" column="17" lean-forward="true" selection-start-line="3031" selection-start-column="17" selection-end-line="3031" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/external_process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlibTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
-            <element signature="e#23#80#0" expanded="true" />
+            <element signature="e#332#345#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/replaceDotsFromPath.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/file_folder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="1254">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
           <folding>
-            <element signature="e#23#80#0" expanded="true" />
+            <element signature="e#43#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/statistics.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/matplotlib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="2420">
+          <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="154">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toopazo_tools/externalProcess.py">
+    <entry file="file://$PROJECT_DIR$/toopazo_tools/time_series.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="424">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
