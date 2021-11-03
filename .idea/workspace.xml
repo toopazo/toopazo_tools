@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763b4c15-0c7e-47bb-8569-e05a2c689d69" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toopazo_tools/telemetry.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/toopazo_tools/data2d.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/toopazo_tools/data2d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/toopazo_tools/file_folder.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/toopazo_tools/file_folder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/lib/toopazo_tools/time_series.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/toopazo_tools/time_series.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/toopazo_tools-0.0.18-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/toopazo_tools-0.0.18.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/toopazo_tools-0.0.47-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/toopazo_tools-0.0.47.tar.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/toopazo_tools.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toopazo_tools/data2d.py" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools/data2d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toopazo_tools.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toopazo_tools/file_folder.py" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools/file_folder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/toopazo_tools/time_series.py" beforeDir="false" afterPath="$PROJECT_DIR$/toopazo_tools/time_series.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +74,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/toopazo_tools/time_series.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/setup.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -160,11 +168,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tpylib_pkg" />
     </key>
   </component>
