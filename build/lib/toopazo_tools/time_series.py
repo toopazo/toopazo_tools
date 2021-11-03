@@ -315,7 +315,7 @@ class TimeseriesTools:
             print('[resample] t2_arr:')
             TimeseriesTools.time_statistics(t2_arr, True)
 
-            print('[resample] scale_factor %s' % scale_factor)
+            # print('[resample] scale_factor %s' % scale_factor)
 
             print('[resample] rt1_arr:')
             TimeseriesTools.time_statistics(rt1_arr, True)
