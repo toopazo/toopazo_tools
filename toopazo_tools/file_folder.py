@@ -96,6 +96,22 @@ class FileFolderTools:
             return arg  # raise RuntimeError(arg)
 
     @staticmethod
+    def get_file_splitext(fpath):
+        #  os.path.splitext(path)
+        #
+        # Split the pathname path into a pair (root, ext) such that
+        # root + ext == path, and the extension, ext, is empty or begins with a
+        # period and contains at most one period. If the path contains no
+        # extension, ext will be '':
+        if FileFolderTools.is_file(fpath):
+            (root, ext) = os.path.splitext(fpath)
+            return [root, ext]
+        else:
+            arg = '[get_file_splitext] Path %s is not a file' % fpath
+            print(arg)
+            return arg  # raise RuntimeError(arg)
+
+    @staticmethod
     def get_file_basename(fpath):
         if FileFolderTools.is_file(fpath):
             # Return the base name of pathname fpath. This is the second

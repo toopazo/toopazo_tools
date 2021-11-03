@@ -6,6 +6,7 @@ toopazo_tools/external_process.py
 toopazo_tools/file_folder.py
 toopazo_tools/matplotlib.py
 toopazo_tools/replace_dots_from_path.py
+toopazo_tools/telemetry.py
 toopazo_tools/time_series.py
 toopazo_tools.egg-info/PKG-INFO
 toopazo_tools.egg-info/SOURCES.txt
