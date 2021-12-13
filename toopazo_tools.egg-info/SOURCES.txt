@@ -1,13 +1,9 @@
+.gitignore
 LICENSE
 README.md
 increment_setup_version.py
 setup.py
 update_library.sh
-.idea/misc.xml
-.idea/modules.xml
-.idea/toopazo_tools.iml
-.idea/vcs.xml
-.idea/workspace.xml
 tests/test_0.orig
 tests/testfile_1.txt
 tests/testfile_2.txt
@@ -25,6 +21,7 @@ toopazo_tools/external_process.py
 toopazo_tools/file_folder.py
 toopazo_tools/install_packages.sh
 toopazo_tools/matplotlib.py
+toopazo_tools/pandas.py
 toopazo_tools/replace_dots_from_path.py
 toopazo_tools/telemetry.py
 toopazo_tools/time_series.py

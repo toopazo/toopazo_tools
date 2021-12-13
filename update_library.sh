@@ -1,7 +1,9 @@
 
 # 1. Update local packages for distribution
-python3 -m pip install --user --upgrade setuptools wheel
-python3 -m pip install --user --upgrade twine
+#python3 -m pip install --user --upgrade setuptools wheel
+#python3 -m pip install --user --upgrade twine
+python3 -m pip install --upgrade setuptools wheel
+python3 -m pip install --upgrade twine
 
 # 2. Open setup.py and change the version, e.g., version='1.0.3'.
 python3 increment_setup_version.py

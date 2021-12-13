@@ -133,8 +133,8 @@ class TelemetryLogger:
         log_path = FFTools.full_path(self.log_folder + '/' + self.log_filename)
         self.log_fd = open(log_path, "w")
         print("[live_data] Creating log file {}".format(log_path))
-
         self.log_fd.write(log_header + "\r\n")
+
         while True:
             log_data = self.telemetry_iface.get_data()
             self.log_fd.write(log_data + "\r\n")
@@ -143,3 +143,13 @@ class TelemetryLogger:
 
         # # Terminate, if out of while loop
         # self.close_it_all()
+
+    def save_data(self, log_data, log_header):
+        if self.log_fd is None:
+            self.log_filename = self.new_log_filename()
+            log_path = FFTools.full_path(self.log_folder + '/' + self.log_filename)
+            self.log_fd = open(log_path, "w")
+            print("[save_data] Creating log file {}".format(log_path))
+            self.log_fd.write(log_header + "\r\n")
+        else:
+            self.log_fd.write(log_data + "\r\n")
