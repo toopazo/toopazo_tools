@@ -1,13 +1,33 @@
 # toopazo_tools
-This is the repository for the pip module ```https://pypi.org/project/toopazo-tools/```
+Python package for common file-processing tasks
 
-It consists of python package for common file-processing tasks
+There is a bash file to automate the creation of a python virtual environment
 
+```
+. ./create_venv.sh
+```
 
-## How to update a new version to https://pypi.org/  
+## Update package stored in a git repo (e.g. Github)
 
-This is note to myself about the necessary steps to upload a new version 
-of the code to the repo in https://pypi.org/.
+1. Open setup.py and increment the version (e.g., version='1.0.3' to version='1.0.4'). 
+   This can be done automatically by running 
+   ```
+   python increment_setup_version.py
+   ```
+2. Upload the new version to the repo
+    ```
+   git status
+   git add .
+   git commit -m "new version of this python package"
+   git push      
+    ```
+6. Install the package on another remote/project/environment etc
+    ```
+    python -m pip install git+https://github.com/toopazo/toopazo_tools.git
+    ```
+ 
+
+## Update package stored in PyPi
 
 I wrote a bash file to automate the update and uploading process to pypi. 
 It is can be executed in the terminal using

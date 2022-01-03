@@ -235,7 +235,7 @@ if __name__ == '__main__':
     runmethod = args.run
 
     if testflag:
-        ubdir = '/home/tzo4/Dropbox/tomas/pennState/avia/software/toopazo_tools'
+        ubdir = '/home/tzo4/Dropbox/tomas/pennState_avia/software/toopazo_tools'
 
         FileFolderTools.chdir(ubdir)
 
@@ -290,6 +290,6 @@ if __name__ == '__main__':
 
     if runmethod is not None:
         umethod = getattr(FileFolderTools, runmethod)
-        # tf = '/home/tzo4/Dropbox/tomas/pennState/avia/firefly_logBook/' \
+        # tf = '/home/tzo4/Dropbox/tomas/pennState_avia/firefly_logBook/' \
         #      '2020-12-22_firefly_mixer'
         # umethod(oldstr='.txt', newstr='.ars', folder=tf, extension='.txt')
