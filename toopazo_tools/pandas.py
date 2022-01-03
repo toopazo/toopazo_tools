@@ -113,3 +113,84 @@ class PandasTools:
         #         tolkey='t_dt_maxusgndev', tolval=df1_rdict['t_dt_mean']/5, verbose=True)
         #
         # return
+
+
+class DataframeTools:
+    @staticmethod
+    def reset_index(df_dict):
+        assert isinstance(df_dict, dict)
+        for key, val in df_dict.items():
+            time_secs = DataframeTools.index_to_elapsed_time(val)
+            df_dict[key].index = time_secs
+        return copy.deepcopy(df_dict)
+
+    @staticmethod
+    def timedelta_to_float(time_arr):
+        # Just in case, convert to secs
+        time_arr = np.array(
+            time_arr).astype("timedelta64[ms]").astype(int) / 1000
+        return time_arr
+
+    @staticmethod
+    def index_to_elapsed_time(dataframe):
+        if isinstance(dataframe.index, pd.DatetimeIndex):
+            time_delta = dataframe.index - dataframe.index[0]
+            time_secs = DataframeTools.timedelta_to_float(time_delta)
+        else:
+            time_secs = dataframe.index - dataframe.index[0]
+        return time_secs
+
+    @staticmethod
+    def check_time_difference(df_coll, max_delta):
+        df_arr = []
+        if isinstance(df_coll, dict):
+            for key, val in df_coll.items():
+                df_arr.append(val)
+        if isinstance(df_coll, list):
+            df_arr = df_coll
+
+        time_0_arr = []
+        time_1_arr = []
+        for df in df_arr:
+            time_0_arr.append(df.index[0])
+            time_1_arr.append(df.index[1])
+        time_0_diff = np.diff(time_0_arr)
+        time_1_diff = np.diff(time_1_arr)
+        # Just in case, convert to secs
+        time_0_diff = DataframeTools.timedelta_to_float(time_0_diff)
+        time_1_diff = DataframeTools.timedelta_to_float(time_1_diff)
+        # Convert to abs values
+        time_0_diff = np.abs(time_0_diff)
+        time_1_diff = np.abs(time_1_diff)
+        if max(time_0_diff) > max_delta:
+            return False
+        if max(time_1_diff) > max_delta:
+            return False
+        return True
+
+    @staticmethod
+    def shortest_time_secs(df_coll):
+        df_arr = []
+        if isinstance(df_coll, dict):
+            for key, val in df_coll.items():
+                df_arr.append(val)
+        if isinstance(df_coll, list):
+            df_arr = df_coll
+
+        time_1_arr = []
+        time_secs_arr = []
+        for df in df_arr:
+            time_secs = DataframeTools.index_to_elapsed_time(df)
+            time_1_arr.append(time_secs[-1])
+            time_secs_arr.append(time_secs)
+        # time_secs of the escid that has the samllest time_1
+        i_smallest_time_1 = np.argmin(time_1_arr)
+        i_time_secs = time_secs_arr[i_smallest_time_1]
+        return i_time_secs
+
+    @staticmethod
+    def remove_by_index(df_dict, rm_index):
+        for key, df in df_dict.items():
+            assert isinstance(df, pd.DataFrame)
+            df_dict[key] = df.drop(rm_index)
+        return copy.deepcopy(df_dict)
