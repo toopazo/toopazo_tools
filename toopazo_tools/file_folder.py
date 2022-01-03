@@ -229,13 +229,15 @@ if __name__ == '__main__':
                         help='Run unit test on test/ folder')
     parser.add_argument('--run', action='store', required=False,
                         help='Run selected method')
+    parser.add_argument('--bdir', action='store', required=True,
+                        help='Target diretory')
     args = parser.parse_args()
 
     testflag = args.test
     runmethod = args.run
+    ubdir = args.bdir
 
     if testflag:
-        ubdir = '/home/tzo4/Dropbox/tomas/pennState_avia/software/toopazo_tools'
 
         FileFolderTools.chdir(ubdir)
 
